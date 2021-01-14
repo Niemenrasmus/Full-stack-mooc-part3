@@ -10,6 +10,7 @@ morgan.token('person', (req, res) => {
   return null
 })
 
+
 let persons = [
     {
       name: "Arto Hellas", 
@@ -33,6 +34,7 @@ let persons = [
     }
   ]
 
+  
 persons_len = Object.keys(persons).length
 
 app.use(express.json())

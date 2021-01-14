@@ -1,7 +1,7 @@
 # GET http://localhost:3001/api/persons
 # DELETE http://localhost:3001/api/persons/2
 
-POST http://localhost:3001/api/persons
+POST https://protected-tor-18583.herokuapp.com/api/persons
 Content-Type: application/json
 
 {
