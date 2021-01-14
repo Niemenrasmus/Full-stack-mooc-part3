@@ -35,7 +35,6 @@ let persons = [
   ]
 
   
-persons_len = Object.keys(persons).length
 
 app.use(express.json())
 app.use(cors())
@@ -56,7 +55,7 @@ app.get("/api/persons", (request, response) => {
 })
 
 app.get("/info", (req, res) => {
-  res.send(`Phonebook has info about ${persons_len} persons 
+  res.send(`Phonebook has info about ${persons.length} persons 
   <br/>
   ${new Date()}`)
 })
