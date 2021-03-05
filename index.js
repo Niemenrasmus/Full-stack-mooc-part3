@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const morgan = require('morgan')
-const bodyParser = require("body-parser");
 
 require('dotenv').config()
 
@@ -23,7 +22,6 @@ morgan.token('person', (req, res) => {
 })
 app.use(express.static('build'))
 app.use(express.json())
-app.use(bodyParser.json())
 app.use(requestLogger)
 app.use(cors())
 
